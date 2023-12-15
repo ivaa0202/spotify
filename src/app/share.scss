@@ -1,0 +1,46 @@
+$grey-text-color: rgb(149, 146, 146);
+$info-box-bg-color: rgb(20 20 20);
+$white: #fff;
+
+@mixin info-box() {
+    background-color: $info-box-bg-color;
+    padding: 12px 8px;
+    border-radius: 5px;
+}
+
+@mixin mini-info-box() {
+    background-color: rgb(37 37 37);
+    padding: 15px 18px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    p,
+    small {
+        padding-bottom: 12px;
+    }
+
+    p{
+        margin: 0;
+    }
+
+    small {
+        display: block;
+    }
+}
+
+@mixin tooltip() {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    color: white;
+    background-color: rgb(74 72 72 / 67%);
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+@mixin hovered-tooltip() {
+    opacity: 1;
+    visibility: visible;
+    transition: .5s;
+}

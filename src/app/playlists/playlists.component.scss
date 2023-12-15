@@ -1,0 +1,107 @@
+@import '../share.scss';
+
+.all {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $info-box-bg-color;
+        padding: 8px 30px;
+
+        div:first-child {
+            svg {
+                fill: grey;
+                font-size: 18px;
+
+                &:first-child {
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        div:last-child {
+
+            .sign-up {
+                border: none;
+                background: transparent;
+                color: grey;
+
+                &:hover {
+                    transform: scale(1.05);
+                    color: rgb(242, 242, 242);
+                }
+            }
+
+            .log-in {
+                background-color: $white;
+                border: none;
+                padding: 12px 32px;
+                border-radius: 35px;
+                margin-left: 30px;
+
+                &:hover {
+                    transform: scale(1.03);
+                    background-color: rgb(242, 242, 242);
+                }
+            }
+        }
+    }
+
+
+    .content {
+        padding: 8px 30px;
+
+        .heading {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+
+            a {
+                text-decoration: none;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .about {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .links {
+                display: flex;
+                ul {
+                    margin: 0;
+                    margin-right: 50px;
+                    padding: 0;
+                    list-style: none;
+
+                    li {
+                        font-size: 14px;
+
+                        &:first-child {
+                            color: $white;
+                            padding-block: 7px;
+                        }
+
+                        &:not(:first-child){
+                            color: $grey-text-color;
+                            cursor: pointer;
+                            padding-block: 4px;
+
+                            &:hover {
+                                color: $white;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
