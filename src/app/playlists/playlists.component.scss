@@ -7,7 +7,7 @@
         align-items: center;
         justify-content: space-between;
         background-color: $info-box-bg-color;
-        padding: 8px 30px;
+        padding: 12px 35px;
 
         div:first-child {
             svg {
@@ -15,7 +15,7 @@
                 font-size: 18px;
 
                 &:first-child {
-                    margin-right: 20px;
+                    margin-right: 25px;
                 }
             }
         }
@@ -50,12 +50,12 @@
 
 
     .content {
-        padding: 8px 30px;
+        padding: 3px 30px;
 
         .heading {
             display: flex;
             justify-content: space-between;
-            padding: 8px 0;
+            align-items: center;
 
             a {
                 text-decoration: none;
@@ -63,6 +63,77 @@
 
                 &:hover {
                     text-decoration: underline;
+                }
+
+                &:first-child {
+                    font-size: 1.4rem;
+                }
+
+                &:last-child {
+                    font-size: .9rem;
+                    color: $grey-text-color;
+                }
+            }
+        }
+
+        .music-lists {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 25px 0;
+
+            .one-playlist {
+                width: 19%;
+                cursor: pointer;
+                border-radius: 8px;
+                padding: 18px;
+                background: rgb(25 23 23 / 58%);
+
+                .img-container {
+                    position: relative;
+                    overflow: hidden;
+
+                    img:first-child {
+                        display: block;
+                        margin: 0 auto;
+                        width: 100%;
+                        border-radius: 5px;
+                    }
+
+
+                    img:last-child {
+                        position: absolute;
+                        bottom: -10px;
+                        right: 10px;
+                        width: 31%;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: .4s;
+                    }
+                }
+
+                .text-container {
+                    h4 {
+                        font-size: 1rem;
+                        margin: 8px 0;
+                    }
+
+                    p {
+                        color: $grey-text-color;
+                        font-size: 0.8em;
+                    }
+                }
+
+                &:hover {
+                    background-color: rgb(37, 37, 37);
+
+                    .img-container {
+                        img:last-child {
+                            visibility: visible;
+                            opacity: 1;
+                            bottom: 10px;
+                        }
+                    }
                 }
             }
         }
@@ -74,21 +145,23 @@
 
             .links {
                 display: flex;
+
                 ul {
                     margin: 0;
-                    margin-right: 50px;
+                    margin-right: 90px;
                     padding: 0;
                     list-style: none;
 
                     li {
                         font-size: 14px;
+                        letter-spacing: 0.8px;
 
                         &:first-child {
                             color: $white;
                             padding-block: 7px;
                         }
 
-                        &:not(:first-child){
+                        &:not(:first-child) {
                             color: $grey-text-color;
                             cursor: pointer;
                             padding-block: 4px;

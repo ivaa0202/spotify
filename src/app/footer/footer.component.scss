@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 76px;
     padding: 10px 20px;
     background: linear-gradient(to right, rgba(180, 3, 153, 0.886),rgb(68, 147, 221));
-    height: 10%;
 
     div:first-child{
         color: white;
@@ -22,7 +22,7 @@
             background-color: white;
             border: none;
             border-radius: 30px;
-            padding: 15px 25px;
+            padding: 12px 25px;
             font-size: 17px;
         }
     }

@@ -139,35 +139,33 @@
             }
         }
 
-        .creating-playlist {
-            @include mini-info-box();
-            margin-bottom: 23px;
+        .create {
+            overflow: scroll;
+            height: 277px;
 
-            button {
-                background-color: white;
-                border: none;
-                border-radius: 30px;
-                padding: 8px 20px;
-                font-size: 13px;
-                margin-top: 5px;
-                transition: .2s;
-                cursor: pointer;
-
-                &:hover {
-                    transform: scale(1.05);
-                    font-weight: 900;
+            .easy-apply {
+                @include mini-info-box();
+                margin-bottom: 23px;
+    
+                button {
+                    background-color: white;
+                    border: none;
+                    border-radius: 30px;
+                    padding: 8px 20px;
+                    font-size: 13px;
+                    margin-top: 5px;
+                    transition: .2s;
+                    cursor: pointer;
+    
+                    &:hover {
+                        transform: scale(1.05);
+                        font-weight: 900;
+                    }
                 }
             }
+    
         }
 
-        .podcast-info {
-            @include mini-info-box();
-            border-radius: 5px 5px 0 0;
-
-            small {
-                padding-bottom: 0;
-            }
-        }
 
 
         .about {
