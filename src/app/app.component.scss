@@ -5,10 +5,14 @@
         display: flex;
         color: white;
         padding-bottom: 10px;
+        max-height: 712px;
+        padding: 8px;
 
         app-playlists{
             background-color: rgb(32, 31, 31);
             width: 100%;
+            
+            overflow: scroll;
             border-radius: 10px;
         }
     }

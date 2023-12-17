@@ -19,7 +19,7 @@
     <div class="content">
         <div class="heading">
             <a>Spotify Playlists</a>
-            <a>Show all</a>
+            <a (click)="showPlaylists()">Show all</a>
         </div>
 
         <div class="music-lists">
@@ -39,8 +39,8 @@
                     <img src="../../assets/img/play-btn.png" alt="">
                 </div>
                 <div class="text-container">
-                    <h4>Dinner with friends</h4>
-                    <p>The perfect soundtrack to those long nights</p>
+                    <h4>Cozy Chrismas Jazz</h4>
+                    <p>Warm instrumental versions of your favorite Christmas songs.</p>
                 </div>
             </div>
             <div class="one-playlist">
@@ -49,8 +49,60 @@
                     <img src="../../assets/img/play-btn.png" alt="">
                 </div>
                 <div class="text-container">
+                    <h4>Chrismas classics</h4>
+                    <p>Timeless heart-warming classics from 1940- 1980 for the holiday season.</p>
+                </div>
+            </div>
+            <div class="one-playlist">
+                <div class="img-container">
+                    <img src="../../assets/img/4.jpeg" alt="">
+                    <img src="../../assets/img/play-btn.png" alt="">
+                </div>
+                <div class="text-container">
                     <h4>Dinner with friends</h4>
                     <p>The perfect soundtrack to those long nights</p>
+                </div>
+            </div>
+            <div class="one-playlist">
+                <div class="img-container">
+                    <img src="../../assets/img/5.jpeg" alt="">
+                    <img src="../../assets/img/play-btn.png" alt="">
+                </div>
+                <div class="text-container">
+                    <h4>Dinner with friends</h4>
+                    <p>The perfect soundtrack to those long nights</p>
+                </div>
+            </div>
+        </div>
+        <div class="music-lists" *ngIf="playlists">
+            <div class="one-playlist">
+                <div class="img-container">
+                    <img src="../../assets/img/1.jpeg" alt="">
+                    <img src="../../assets/img/play-btn.png" alt="">
+                </div>
+                <div class="text-container">
+                    <h4>Dinner with friends</h4>
+                    <p>The perfect soundtrack to those long nights</p>
+                </div>
+            </div>
+            <div class="one-playlist">
+                <div class="img-container">
+                    <img src="../../assets/img/2.jpeg" alt="">
+                    <img src="../../assets/img/play-btn.png" alt="">
+                </div>
+                <div class="text-container">
+                    <h4>Cozy Chrismas Jazz</h4>
+                    <p>Warm instrumental versions of your favorite Christmas songs.</p>
+                </div>
+            </div>
+            <div class="one-playlist">
+                <div class="img-container">
+                    <img src="../../assets/img/3.webp" alt="">
+                    <img src="../../assets/img/play-btn.png" alt="">
+                </div>
+                <div class="text-container">
+                    <h4>Chrismas classics</h4>
+                    <p>Timeless heart-warming classics from 1940- 1980 for the holiday season.</p>
                 </div>
             </div>
             <div class="one-playlist">

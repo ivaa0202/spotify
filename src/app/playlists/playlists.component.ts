@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class PlaylistsComponent {
 
+  playlists: boolean = false;
+
+  showPlaylists(): void {
+    this.playlists = !this.playlists;
+  }
+
 }
