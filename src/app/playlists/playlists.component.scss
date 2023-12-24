@@ -7,15 +7,15 @@
         align-items: center;
         justify-content: space-between;
         background-color: $info-box-bg-color;
-        padding: 12px 35px;
+        padding: 0.75rem 2.188rem;
 
         div:first-child {
             svg {
                 fill: grey;
-                font-size: 18px;
+                font-size: 1.125rem;
 
                 &:first-child {
-                    margin-right: 25px;
+                    margin-right: 1.563rem;
                 }
             }
         }
@@ -36,9 +36,9 @@
             .log-in {
                 background-color: $white;
                 border: none;
-                padding: 12px 32px;
-                border-radius: 35px;
-                margin-left: 30px;
+                padding: 0.75rem 2rem;
+                border-radius: 2.188rem;
+                margin-left: 1.875rem;
 
                 &:hover {
                     transform: scale(1.03);
@@ -50,7 +50,7 @@
 
 
     .content {
-        padding: 3px 20px;
+        padding: 0.188rem 1.25rem;
 
         .heading {
             display: flex;
@@ -80,14 +80,14 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin: 10px 0;
+            margin: 0.625rem 0;
 
             .one-playlist {
                 width: 19%;
-                height: 285px;
+                height: 17.813rem;
                 cursor: pointer;
-                border-radius: 8px;
-                padding: 18px;
+                border-radius: 0.5rem;
+                padding: 1.125rem;
                 background: rgb(25 23 23 / 58%);
 
                 .img-container {
@@ -98,14 +98,14 @@
                         display: block;
                         margin: 0 auto;
                         width: 100%;
-                        border-radius: 5px;
+                        border-radius: 0.313rem;
                     }
 
 
                     img:last-child {
                         position: absolute;
-                        bottom: -10px;
-                        right: 10px;
+                        bottom: -0.625rem;
+                        right: 0.625rem;
                         width: 31%;
                         visibility: hidden;
                         opacity: 0;
@@ -116,7 +116,7 @@
                 .text-container {
                     h4 {
                         font-size: 1rem;
-                        margin: 8px 0;
+                        margin: 0.5rem 0;
                     }
 
                     p {
@@ -137,7 +137,7 @@
                         img:last-child {
                             visibility: visible;
                             opacity: 1;
-                            bottom: 10px;
+                            bottom: 0.625rem;
                         }
                     }
                 }
@@ -149,26 +149,27 @@
 
             .links {
                 display: flex;
+                margin-top: 5rem;
 
                 ul {
                     margin: 0;
-                    margin-right: 90px;
+                    margin-right: 5.625rem;
                     padding: 0;
                     list-style: none;
 
                     li {
-                        font-size: 14px;
-                        letter-spacing: 0.8px;
+                        font-size: 0.875rem;
+                        letter-spacing: 0.05rem;
 
                         &:first-child {
                             color: $white;
-                            padding-block: 7px;
+                            padding-block: 0.438rem;
                         }
 
                         &:not(:first-child) {
                             color: $grey-text-color;
                             cursor: pointer;
-                            padding-block: 4px;
+                            padding-block: 0.25rem;
 
                             &:hover {
                                 color: $white;

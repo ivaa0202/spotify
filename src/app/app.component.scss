@@ -1,19 +1,20 @@
 .all{
     background-color: black;
+    height: 100vh;
 
     .main{
         display: flex;
         color: white;
-        padding-bottom: 10px;
-        max-height: 712px;
-        padding: 8px;
+        padding-bottom: 0.625rem;
+        height: 91.5vh;
+        padding: 0.5rem;
 
         app-playlists{
             background-color: rgb(32, 31, 31);
             width: 100%;
             
             overflow: scroll;
-            border-radius: 10px;
+            border-radius: 0.625rem;
         }
     }
 

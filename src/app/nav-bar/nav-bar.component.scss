@@ -1,16 +1,17 @@
 @import '../share.scss';
 
 .all {
-    width: 330px;
-    margin-right: 10px;
+    width: 20.625rem;
+    margin-right: 0.625rem;
     color: white;
 
     .nav {
         @include info-box();
-        margin-bottom: 8px;
+        height: 18vh;
+        margin-bottom: 0.5rem;
 
         ul {
-            padding: 9px 15px;
+            padding: 0.563rem 0.938rem;
             margin: 0;
 
             li {
@@ -18,7 +19,7 @@
                 cursor: pointer;
 
                 &:nth-child(2) {
-                    padding-block: 20px;
+                    padding-block: 1.25rem;
                 }
 
                 &:last-child {
@@ -36,13 +37,13 @@
 
                 svg {
                     fill: white;
-                    font-size: 22px;
+                    font-size: 1.375rem;
                     vertical-align: sub;
-                    margin-right: 25px
+                    margin-right: 1.563rem
                 }
 
                 .spotify-icon {
-                    margin-right: 5px
+                    margin-right: 0.313rem;
                 }
 
                 .search-icon {
@@ -55,13 +56,14 @@
     }
 
     .info {
+        height: 70vh;
         @include info-box();
 
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 10px 20px 15px;
+            padding: 0 0.625rem 1.25rem 0.938rem;
             position: relative;
 
             svg {
@@ -75,14 +77,14 @@
 
                 .meaning-of-plus-icon {
                     @include tooltip();
-                    top: -33px;
-                    right: -65px;
+                    top: -2.063rem;
+                    right: -4.063rem;
                 }
 
                 .plus-icon {
-                    font-size: 31px;
+                    font-size: 1.938rem;
                     cursor: pointer;
-                    padding: 7px;
+                    padding: 0.438rem;
                     border-radius: 50%;
                     transition: .5s;
                 }
@@ -110,18 +112,18 @@
 
                 .meaning-of-your-library {
                     @include tooltip();
-                    top: -33px;
-                    left: 5px;
+                    top: -2.063rem;
+                    left: 0.313rem;
                 }
 
                 svg {
-                    padding-right: 10px;
-                    font-size: 22px;
+                    padding-right: 0.625rem;
+                    font-size: 1.375rem;
                     transition: .5s;
                 }
 
                 h4 {
-                    font-size: 16px;
+                    font-size: 1rem;
                     margin: 0;
                 }
 
@@ -141,19 +143,19 @@
 
         .create {
             overflow: scroll;
-            height: 277px;
+            height: 32vh;
 
             .easy-apply {
                 @include mini-info-box();
-                margin-bottom: 23px;
+                margin-bottom: 1.438rem;
     
                 button {
                     background-color: white;
                     border: none;
-                    border-radius: 30px;
-                    padding: 8px 20px;
-                    font-size: 13px;
-                    margin-top: 5px;
+                    border-radius: 1.875rem;
+                    padding: 0.5rem 1.25rem;
+                    font-size: 0.813rem;
+                    margin-top: 0.313rem;
                     transition: .2s;
                     cursor: pointer;
     
@@ -169,28 +171,26 @@
 
 
         .about {
-            padding: 18px 15px;
+            padding: 3.125rem 0.938rem;
 
             a {
-                font-size: 11px;
+                font-size: 0.688rem;
                 color: $grey-text-color;
                 display: inline-block;
-                padding: 10px 15px 5px 0;
+                padding: 0.625rem 0.938rem 0.188rem 0;
                 cursor: pointer;
             }
         }
 
         .choose-language {
-            padding: 12px 15px;
+
+            padding: 0 0.938rem;
 
             a {
-                display: inline-block;
-                padding: 5px 15px 5px 10px;
-                background-color: #171717;
-                color: white;
                 border: 1px solid grey;
-                border-radius: 15px;
-                font-size: 14px;
+                border-radius: 1.25rem;
+                padding: 0.313rem 0.75rem;
+                font-size: 0.875rem;
                 text-decoration: none;
                 cursor: pointer;
 
@@ -200,20 +200,19 @@
                         'wght' 400,
                         'GRAD' 0,
                         'opsz' 24;
-                    font-size: 18px;
+                    font-size: 1.125rem;
                     vertical-align: sub;
-                    padding-right: 3px;
+                    padding-right: 0.188rem;
                 }
-
 
                 &:hover {
-                    transform: scale(1.03);
-                    border: 1.5px solid white;
+                    transform: scale(1.02);
 
                     .material-symbols-outlined {
-                        transform: scale(1.03);
+                        transform: scale(1.02);
                     }
                 }
+
             }
         }
 

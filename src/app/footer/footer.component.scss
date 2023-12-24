@@ -2,18 +2,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 76px;
-    padding: 10px 20px;
+    height: 8.5vh;
+    padding: 0.625rem 1.25rem;
     background: linear-gradient(to right, rgba(180, 3, 153, 0.886),rgb(68, 147, 221));
 
     div:first-child{
         color: white;
         span{
-            font-size: 13px;
-            padding: 10px 0;
+            font-size: 0.813rem;
+            padding: 0.625rem 0;
         }
         p{
-            font-size: 17px;
+            font-size: 1.063rem;
         }
     }
 
@@ -21,9 +21,9 @@
         button{
             background-color: white;
             border: none;
-            border-radius: 30px;
-            padding: 12px 25px;
-            font-size: 17px;
+            border-radius: 1.875rem;
+            padding: 0.75rem 1.563rem;
+            font-size: 1.063rem;
         }
     }
 }
