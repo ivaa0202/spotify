@@ -1,13 +1,13 @@
 .all{
     background-color: black;
     height: 100vh;
+    padding: 0.5rem;
 
     .main{
         display: flex;
         color: white;
         padding-bottom: 0.625rem;
-        height: 91.5vh;
-        padding: 0.5rem;
+        height: 90vh;
 
         app-playlists{
             background-color: rgb(32, 31, 31);
