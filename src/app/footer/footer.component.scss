@@ -1,29 +1,90 @@
-.add{
+.add {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 8vh;
     padding: 0.625rem 1.25rem;
-    background: linear-gradient(to right, rgba(180, 3, 153, 0.886),rgb(68, 147, 221));
+    background: linear-gradient(to right, rgba(180, 3, 153, 0.886), rgb(68, 147, 221));
 
-    div:first-child{
+    div:first-child {
         color: white;
-        span{
+
+        span {
             font-size: 0.813rem;
             padding: 0.625rem 0;
         }
-        p{
-            font-size: 1.063rem;
+
+        p {
+            font-size: 1rem;
+            margin: 0;
         }
     }
 
-    div:last-child{
-        button{
+    div:last-child {
+        button {
             background-color: white;
             border: none;
             border-radius: 1.875rem;
             padding: 0.75rem 1.563rem;
             font-size: 1.063rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .add {
+
+        div:first-child {
+            span {
+                font-size: 0.5rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
+
+        div:last-child {
+            button {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+    .add {
+
+        div:first-child {
+            p {
+                font-size: 0.8rem;
+            }
+        }
+
+        div:last-child {
+            button {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 710px) {
+    .add {
+
+        div:first-child {
+            p {
+                font-size: 0.7rem;
+            }
+        }
+
+        div:last-child {
+            button {
+                font-size: 0.7rem;
+            }
         }
     }
 }
